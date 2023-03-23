@@ -20,7 +20,7 @@ impl RandomStringUtils {
         let mut out = String::new();
         while out.len() < count {
             let code_point = (self.random.next_int(gap) + start) as u8 as char;
-            if code_point.is_alphanumeric() {
+            if code_point.is_alphabetic() {
                 out.push(code_point);
             }
         }
@@ -33,7 +33,7 @@ impl RandomStringUtils {
         let gap = end - start;
         loop {
             let code_point = self.random.next_int(gap) + start;
-            if (code_point as u8 as char).is_alphanumeric() {
+            if (code_point as u8 as char).is_alphabetic() {
                 return code_point;
             }
         }
