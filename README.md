@@ -1,5 +1,7 @@
 # RandomStringUtils/nextInt Cracker
 
+Forked -- cracks in randomAlphabetic instead
+
 This is a tool to crack [RandomStringUtils](https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/RandomStringUtils.html) and Java's default `java.util.Random.nextInt(bound)` when `bound` is odd. See the accompanying [blog post](https://elttam.com/blog/cracking-randomness-in-java/) for some background and how it works.
 
 ## Installation
